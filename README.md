@@ -22,9 +22,9 @@ b) your inputs you want to be validated need a "data-validateall" attribute
 
 c) your atrributes must contain some options - data-validateall="string:8,Name"
 
-	 ----- "what kind of validation:minum length of string or number,name of the field to be displayed in the error alert"
+"what kind of validation:minum length of string or number,name of the field to be displayed in the error alert"
 
-	 you have one optional option for string,textarea and number at the last, you can pass an integer to validate maximum letters.
+you have one optional option for string,textarea and number at the last, you can pass an integer to validate maximum letters.
 
 
 Step 3:
