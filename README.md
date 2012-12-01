@@ -9,7 +9,7 @@ Example:
 Step 1:
 Insert this in before closing body tag.
 
-&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js" &gt;&lt;/script&gt;
 
 &lt;script type="text/javascript" src="jquery.validateall.js"&gt;&lt;/script&gt;
 
@@ -20,9 +20,9 @@ a) your form needs an id
 
 b) your inputs you want to be validated need a "data-validateall" attribute
 
-c) your atrributes must contain some options -&gt; data-validateall="string:8,Name"
+c) your atrributes must contain some options - data-validateall="string:8,Name"
 
-	 -----&gt; "what kind of validation:minum length of string or number,name of the field to be displayed in the error alert"
+	 ----- "what kind of validation:minum length of string or number,name of the field to be displayed in the error alert"
 
 	 you have one optional option for string,textarea and number at the last, you can pass an integer to validate maximum letters.
 
@@ -38,7 +38,7 @@ Place this after the Plugin.
 	// you can pass comma separated jquery Objects for example $(window).validateAll($("#form1"),$("#form2"));
 
 	$(window).validateAll($("#form"));		
-	
+
 &lt;/script&gt;
 
 
