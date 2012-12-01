@@ -11,7 +11,8 @@ This Plugin in free to use! Please keep this comment block inside. Have fun!
 (function($){
 	$.fn.validateAll = function(elements) {
 
-		var options = $.extend($.fn.validateAll.options);
+		//options will come in the future like error styling etc.
+		//var options = $.extend($.fn.validateAll.options);
 
 		function init(){
 			
