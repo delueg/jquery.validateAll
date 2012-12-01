@@ -31,7 +31,7 @@ Step 3:
 
 Invoke your validation
 
-Place this after the Plugin.
+Place this after the Plugin. 
 
 &lt;script&gt;
 

@@ -24,36 +24,36 @@ This Plugin in free to use! Please keep this comment block inside. Have fun!
 							if(arr_field_data[0].indexOf("string") != -1){
 								var arr_type_val = arr_field_data[0].split(":");
 								if($(this).val() == ""){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " ist Pflicht!\n";
+									str_error_msg += "The field " +arr_field_data[1]+ " is mandatory!\n";
 								}else if($(this).val().length < arr_type_val[1]){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " muss mindestens "+ arr_type_val[1] +" Buchtaben haben!\n";	
+									str_error_msg += "The field " +arr_field_data[1]+ " needs minimum "+ arr_type_val[1] +" characters!\n";	
 								}else if($(this).val().length > arr_field_data[2] && arr_field_data[2] != undefined ){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " darf maximal "+ arr_field_data[2] +" Buchtaben haben!\n";	
+									str_error_msg += "The field " +arr_field_data[1]+ " can contain "+ arr_field_data[2] +" characters max!\n";	
 								}
 							}
 							if(arr_field_data[0].indexOf("number") != -1){
 								var arr_type_val = arr_field_data[0].split(":");
 								if($(this).val() == ""){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " ist Pflicht!\n";
+									str_error_msg += "The field " +arr_field_data[1]+ " is mandatory!\n";
 								}else if(!parseFloat($(this).val())){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " darf nur aus Ziffern bestehen!\n";	
+									str_error_msg += "The field " +arr_field_data[1]+ " can only contain digits!\n";	
 								}else if($(this).val().length < arr_type_val[1]){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " muss mindestens "+ arr_type_val[1] +" Ziffern haben!\n";	
+									str_error_msg += "The field " +arr_field_data[1]+ " needs minimum "+ arr_type_val[1] +" digets!\n";	
 								}else if($(this).val().length > arr_field_data[2] && arr_field_data[2] != undefined ){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " darf maximal "+ arr_field_data[2] +" Ziffern haben!\n";	
+									str_error_msg += "The field " +arr_field_data[1]+ " can contain "+ arr_field_data[2] +" digets max!\n";	
 								}
 							}
 							if(arr_field_data[0].indexOf("checkbox") != -1){
 								var checked = $(this).is(":checked");
 								if(checked != true){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " ist Pflicht!\n";
+									str_error_msg += "The field " +arr_field_data[1]+ " is mandatory!\n";
 								}
 							}
 							if(arr_field_data[0].indexOf("email") != -1){
 								if($(this).val() == ""){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " ist Pflicht!\n";
+									str_error_msg += "The field " +arr_field_data[1]+ " is mandatory!\n";
 								}else if(validateEmail($(this).val()) == false){
-									str_error_msg += "Das Feld " +arr_field_data[1]+ " hat kein gültiges Format!\n";	
+									str_error_msg += "The field " +arr_field_data[1]+ " has no valid format!\n";	
 								}
 							}
 						}
