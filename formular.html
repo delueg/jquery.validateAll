@@ -1,0 +1,36 @@
+<!doctype>
+<html>
+<head>
+	<title>jquery.validateAll</title>
+</head>
+<body>
+	
+	<form action="" id="form">
+		string<br />
+		<input type="text" data-validateall="string:3,String" /><br />
+		number<br />
+		<input type="text" data-validateall="number:2,Number" /><br />
+		email<br />
+		<input type="text" data-validateall="email,Email" /><br />
+		check<br />
+		<input type="checkbox" data-validateall="checkbox,Checkbox" /><br />
+		textarea<br />
+		<textarea data-validateall="string:5,Textarea,255"></textarea><br />
+		select<br />
+		<select data-validateall="string:2,Select">
+			<option value="">please Choose...</option>
+			<option value="jo">this option</option>
+		</select><br />
+		
+		<input type="submit" value="schick" /><br />
+	</form>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+	<script type="text/javascript" src="jquery.validateall.js"></script>
+	<script>
+
+		$(window).validateAll($("#form"));
+		
+	</script>
+	
+</body>
+<html>
