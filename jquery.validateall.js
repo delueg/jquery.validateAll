@@ -11,8 +11,7 @@ This Plugin in free to use! Please keep this comment block inside. Have fun!
 (function($){
 	$.fn.validateAll = function(elements) {
 
-		// options kommen in der zukunft wie error styling etc.
-		//var options = $.extend($.fn.validateAll.options);
+		var options = $.extend($.fn.validateAll.options);
 
 		function init(){
 			
@@ -60,10 +59,22 @@ This Plugin in free to use! Please keep this comment block inside. Have fun!
 						}
 					});//end form inputs each
 					if(str_error_msg != ""){
-						alert(str_error_msg);
-						return false;
+						if(options.error !== undefined){
+							options.error();
+							return false;
+						}else{
+							//console.log("true")
+							alert(str_error_msg);
+							return false;
+						}
 					}else{
-						return true;
+						if(options.success !== undefined){
+							options.success();
+							return false;
+						}else{
+							//console.log("true")
+							return true;
+						}
 					}
 				});//end $(element).bind submit
 			});//end $.each(elements)

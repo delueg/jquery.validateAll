@@ -69,6 +69,21 @@ Full example:
 	<script type="text/javascript" src="jquery.validateall.js"></script>
 	<script>
 
+
+		function sendForm(){
+			//do something
+		}
+
+		function showErrors(){
+			//do something else
+		}
+		
+	// define callback functions
+		$.fn.validateAll.options = {
+			success: sendForm,
+			error: showErrors
+		};
 		$(window).validateAll($("#form"));
+
 		
 	</script>
